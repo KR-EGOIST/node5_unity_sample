@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+message CommonPacket {
+  uint32 handlerId = 1;
+  uint32 playerId = 2;
+  string version = 3;
+  bytes payload = 4;
+}
+
+message InitialPacket {
+  string deviceId = 1;
+}
